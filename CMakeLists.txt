@@ -21,6 +21,6 @@ source_group("SRC" FILES ${lib_srcs})
 #生成静态库
 add_library(labelspoints STATIC ${lib_hdrs} ${lib_srcs})
 #生成可执行文件			  
-add_executable(main_app ${unit_test})
+add_executable(main_app ${main_app})
 #设置依赖的动态库
 target_link_libraries(main_app labelspoints)
